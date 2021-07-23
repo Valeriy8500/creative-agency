@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap-project</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/51ba1b6f73.js" crossorigin="anonymous"></script>
+
+  <link rel='stylesheet' href="./style.css">
+</head>
+
+<body>
+  <header class="main-header">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./img/logo.png" alt="logo">BlueRex
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars butn"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0 ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#1">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+            <li class="nav-item"><a class="nav-link" href="#2">Product</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Reviews</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Faq</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="main-header-text">
+      <h3>We are best and creative agency</h3>
+      <h4>We turn creative ideas into your business</h4>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero possimus autem laborum corporis. A, dolorem?</p>
+      <div class="main-header-buttons">
+        <button type="button" class="btn btn-pink rounded-pill">Our story</button>
+        <button type="button" class="btn btn-violet rounded-pill">Read more</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="section-watch">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <h3>Dream Big Inspire the World</h3>
+          <h4>We turn creative ideas into your business.</h4>
+
+          <ul class="nav nav-pills" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="webdesign-tab" data-bs-toggle="tab" data-bs-target="#webdesign"
+                type="button" role="tab" aria-controls="webdesign" aria-selected="true">Webdesign</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="mobileapp-tab" data-bs-toggle="tab" data-bs-target="#mobileapp" type="button"
+                role="tab" aria-controls="mobileapp" aria-selected="false">Mobile app</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="branding-tab" data-bs-toggle="tab" data-bs-target="#branding" type="button"
+                role="tab" aria-controls="branding" aria-selected="false">Branding</button>
+            </li>
+          </ul>
+
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="webdesign" role="tabpanel" aria-labelledby="webdesign-tab">
+              <p>Webdesign ipsum dolor, sit amet consectetur adipisicing elit. Unde soluta expedita quam optio quisquam
+                labore praesentium dolor rem eos voluptas.</p>
+              <p><a href="#" class="btn btn-pink btn-shadow rounded-pill">Read more</a></p>
+            </div>
+            <div class="tab-pane fade" id="mobileapp" role="tabpanel" aria-labelledby="mobileapp-tab">
+              <p>Mobile app ipsum dolor, sit amet consectetur adipisicing elit. Unde soluta expedita quam optio quisquam
+                labore praesentium
+                dolor rem eos voluptas.</p>
+              <p><a href="#" class="btn btn-pink btn-shadow rounded-pill">Read more</a></p>
+            </div>
+            <div class="tab-pane fade" id="branding" role="tabpanel" aria-labelledby="branding-tab">
+              <p>Branding ipsum dolor, sit amet consectetur adipisicing elit. Unde soluta expedita quam optio quisquam
+                labore praesentium
+                dolor rem eos voluptas.</p>
+              <p><a href="#" class="btn btn-pink btn-shadow rounded-pill">Read more</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 text-center section-watch-img">
+          <img src="./img/watch.png" alt="watch">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-progress text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 progress-item">
+          <div><i class="fas fa-bullhorn"></i></div>
+          <div class="num">500+</div>
+          <h4><span>Successfully</span> completed projects</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores beatae illo dolorem asperiores sit amet
+            nam sed ab delectus. Doloremque dolores suscipit tempora, veritatis aut distinctio fugiat dicta nesciunt
+            facere!</p>
+        </div>
+        <div class="col-md-4 progress-item">
+          <div><i class="fas fa-bullhorn"></i></div>
+          <div class="num">254+</div>
+          <h4><span>Highly</span> specialised employees</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores beatae illo dolorem asperiores sit amet
+            nam sed ab delectus. Doloremque dolores suscipit tempora, veritatis aut distinctio fugiat dicta nesciunt
+            facere!</p>
+        </div>
+        <div class="col-md-4 progress-item">
+          <div><i class="fas fa-bullhorn"></i></div>
+          <div class="num">45+</div>
+          <h4><span>Awards</span> around the world</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores beatae illo dolorem asperiores sit amet
+            nam sed ab delectus. Doloremque dolores suscipit tempora, veritatis aut distinctio fugiat dicta nesciunt
+            facere!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-lets text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Let's Grow Together</h3>
+          <h4>We turn creative ideas into your business.</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt perferendis expedita possimus non
+            voluptatum saepe cupiditate ea facilis libero, voluptatem autem quidem, placeat dignissimos est, explicabo
+            enim. Tempora, quis iure.</p>
+          <p><a href="#" class="btn btn-pink btn-shadow rounded-pill">Read more</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+  <script src="./index.js"></script>
+</body>
+
+</html>
