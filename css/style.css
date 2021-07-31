@@ -25,9 +25,10 @@ h4{
 	margin-bottom: 20px;
 }
 
-/* =============================header============================== */
+/* header */
+
 .main-header{
-	background: url(./img/main1.jpg) center no-repeat;
+	background: url(../img/main1.jpg) center no-repeat;
 	background-size: cover;
 	height: 100vh;
 	min-height: 600px;
@@ -121,7 +122,7 @@ h4{
 
 /* section watch  */
 
-.section-watch{
+.section-tabs{
 	background: url(../img/world_map.png) center no-repeat;
 	background-size: cover;
 }
@@ -131,11 +132,11 @@ h4{
 	color: #484848;
 }
 
-.section-watch .nav-pills{
+.section-tabs .nav-pills{
 	margin-bottom: 20px;
 }
 
-.section-watch .nav-pills .nav-link{
+.section-tabs .nav-pills .nav-link{
 	font-size: 13px;
 	font-weight: 600;
 	text-transform: uppercase;
@@ -143,7 +144,7 @@ h4{
 	color: #484848;
 }
 
-.section-watch .nav-pills .nav-item .nav-link.active{
+.section-tabs .nav-pills .nav-item .nav-link.active{
 	background-color: #f42267;
 	color: #fff;
 	box-shadow: 0 4px 16px rgba(0,0,0,.35);
@@ -163,7 +164,7 @@ h4{
 }
 
 .section-progress {
-  background-color: #442e82;
+	background-color: #442e82;
 }
 
 /* section-progress */
@@ -204,12 +205,108 @@ h4{
 /* section-lets */
 
 .section-lets {
-  background: url(./img/letsgrow.jpg) center no-repeat;
+	background: url(../img/letsgrow.jpg) center no-repeat;
+	background-size: cover;
+	color: #fff;
+}
+
+/* section-design */
+
+.section-design h3,
+.section-design h4{
+	color: #484848;
+}
+
+.section-design h3{
+	font-size: 33px;
+}
+
+.section-design span i{
+	font-size: 60px;
+	background: linear-gradient(45deg, rgba(255,0,32,.7) 0%,rgba(68,26,130,.8) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	padding-left: 15px;
+}
+
+.section-design h2{
+	font-size: 25px;
+	font-weight: 600;
+	color: #484848;
+	margin: 10px 0;
+}
+
+.section-design p{
+	font-size: 14px;
+}
+
+.section-design-video-container{
+	border-radius: 10px;
+	margin-top: 90px;
+	margin-left: 30px;
+	height: 100%;
+}
+
+.section-design-video {
+  width: 80%;
+  height: 70%;
+}
+
+/* section-work */
+
+.section-work{
+	background: #f1f1f1;
+}
+
+.section-work .nav-pills{
+	margin: 30px 0;
+}
+
+.gallery-item{
+	margin-bottom: 20px;
+}
+
+.gallery a img{
+	transition: all .5s;
+}
+
+.gallery a:hover img{
+	box-shadow: 0 14px 30px -15px rgba(0,0,0,.75);
+}
+
+/* section-reviews */
+
+.section-reviews {
+  color: #f1f1f1;
+  background: url(../img/reviews_bg.jpg) center no-repeat;
   background-size: cover;
-  color: #fff;
+  padding: 0;
+}
+
+.section-reviews .col-xl-5 {
+  margin-top: 50px;
+}
+
+.section-reviews-img-blockquote {
+  margin-top: 30px;
+}
+
+.section-reviews-img-stars {
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+
+.section-reviews .col-xl-4 {
+  margin-top: 20px;
 }
 
 /* Media */
+
+@media (max-width: 1440px) {
+	.section-design-video {
+    height: 300px;
+  }
+}
 
 @media only screen and (max-width : 992px) {
 	.main-header-text{
@@ -221,6 +318,10 @@ h4{
 
   .section-watch-img {
     margin-top: 20px;
+  }
+
+  .section-design-video-container {
+    margin-left: 0;
   }
 }
 
@@ -242,10 +343,14 @@ h4{
 	h3, h4{
 		font-size: 30px;
 	}
-  .section-progress .progress-item{
+    .section-progress .progress-item{
 		padding-top: 40px;
 		padding-bottom: 40px;
 	}
+
+    .section-design-video {
+        height: 250px;
+    }
 }
 
 @media only screen and (max-width : 600px) {
@@ -267,12 +372,20 @@ h4{
 }
 
 @media only screen and (max-width : 480px) {
-	.section-watch .nav-pills .nav-link{
+	.section-tabs .nav-pills .nav-link{
 		padding: 8px 16px;
 	}
-	.section-watch .nav-pills .nav-item{
+	.section-tabs .nav-pills .nav-item{
 		width: 100%;
 	}
+
+  .section-design-video {
+    height: 200px;
+  }
+
+  .section-design-video-container{
+  margin-top: 45px;
+}
 }
 
 @media only screen and (max-width : 380px) {
